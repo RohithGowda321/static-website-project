@@ -86,9 +86,10 @@ body {
   }
 
   .header-button {
-    font-size: 14px;
-    padding: 8px 16px;
-  }
+    font-size: 12px;
+    padding: 8px 4px;
+}
+
 }
 
 .hero-container {
@@ -1059,7 +1060,7 @@ body {
   }
 }
 .footer {
-  background-color: #15364c;
+  background-color: #15364C;
   color: #ffffff;
   padding: 20px 15px;
 }
@@ -1068,18 +1069,17 @@ body {
   max-width: 1300px;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap; 
   justify-content: space-between;
   align-items: flex-start;
-  gap: 20px; 
+  gap: 20px; /* Add spacing between elements */
 }
 
 .footer-left {
-  flex: 1 1 100%;
+  flex: 1 1 100%; /* Take full width on smaller screens */
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center; 
+  text-align: center; /* Center-align text for smaller screens */
 }
 
 .footer-logo {
@@ -1105,18 +1105,18 @@ body {
 }
 
 .footer-links {
-  flex: 1 1 100%; 
+  flex: 1 1 100%; /* Take full width on smaller screens */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 130px; /* Add spacing between columns */
 }
 
 .footer-links ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  text-align: center; 
+  text-align: center; /* Center-align for smaller screens */
 }
 
 .footer-links li {
@@ -1124,7 +1124,7 @@ body {
   font-size: 12px;
   font-weight: normal;
   margin: 8px 0;
-  color: #ffffff;
+  color: #FFFFFF;
   cursor: pointer;
 }
 
@@ -1132,11 +1132,12 @@ body {
   text-decoration: underline;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
   .footer-container {
-    flex-direction: column; 
+    flex-direction: column; /* Stack elements vertically */
     align-items: center;
-    gap: 30px; 
+    gap: 30px; /* Increase spacing for better layout */
   }
 
   .footer-links {
@@ -1161,11 +1162,11 @@ body {
   }
 
   .footer-links li {
-    font-size: 14px; 
+    font-size: 14px; /* Slightly increase font size for better readability */
   }
 
   .footer-icons {
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allow icons to wrap if necessary */
     gap: 15px;
   }
 }
